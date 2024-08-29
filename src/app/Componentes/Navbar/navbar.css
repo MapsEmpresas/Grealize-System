@@ -18,10 +18,11 @@
 }
 .navbar {
   background-color: #ffffff; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 .navbar-brand img {
-  max-width: 100%;
+  width: 60px;
+  height: 70px;
 }
 .navbar-toggler-icon {
   border: 2px solid #28a745; 
@@ -33,6 +34,7 @@
   color: #333; 
   font-weight: bold; 
   margin-right: 10px; 
+  
 }
 .nav-link:hover {
   color: #28a745; 
@@ -58,4 +60,16 @@
 }
 .text-danger {
   color: #dc3545; 
+}
+.btn-nav-ct{
+    color: #464E80;
+    font-size: small;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+}
+.btn-nav-ct0{
+  color: #ffffff;
+  font-size: small;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
 }

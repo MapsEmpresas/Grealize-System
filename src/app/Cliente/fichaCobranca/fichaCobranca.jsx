@@ -5,9 +5,12 @@ import { getFirestore, doc, getDoc, updateDoc } from 'firebase/firestore';
 import 'firebase/firestore'
 
 function FichaCobranca() {
+    const [cliente, setCliente] = useState(null);
+
     const [cobrador, setCobrador] = useState('');
     const [vencimentoCobranca, setVencimentoCobranca] = useState('');
     const [dataCobranca, setDataCobranca] = useState('');
+    const [valor, setValor] = useState('');
     const [senha, setSenha] = useState('');
     const [mensagem, setMensagem] = useState('');
     const [sucesso, setSucesso] = useState('');
@@ -23,9 +26,7 @@ function FichaCobranca() {
                 console.log('Snapshot do Documento:', docSnapshot.data());
                 if (docSnapshot.exists()) {
                     const dados = docSnapshot.data();
-                    setDataCobranca(dados.dataCobranca);
-                    setVencimentoCobranca(dados.vencimentoCobranca);
-                    setCobrador(dados.cobrador);
+                    setCliente(docSnapshot.data());
                 } else {
                     setMensagem('Cliente não encontrado');
                 }
@@ -41,11 +42,12 @@ function FichaCobranca() {
         try {
             // Solicitar senha
             const senhaDigitada = prompt("Digite sua senha:");
-            if (senhaDigitada === 'Financeiro150717Fc@') { // Verifica se a senha está correta
+            if (senhaDigitada === '@') { // Verifica se a senha está correta
                 await updateDoc(doc(db, 'clientes', id), {
                     cobrador: cobrador,
                     vencimentoCobranca: vencimentoCobranca,
-                    dataCobranca: dataCobranca
+                    dataCobranca: dataCobranca,
+                    valor: valor,
                 });
                 setMensagem('');
                 setSucesso('S');
@@ -61,6 +63,8 @@ function FichaCobranca() {
 
     return (
         <div>
+                        {cliente && (
+
             <div className="background9">
                 <form className="box">
                     <div className="title">
@@ -74,27 +78,33 @@ function FichaCobranca() {
                             <div className="input-group-prendend">
                                 <span className="input-group-text">Nome do cobrador:</span>
                             </div>
-                            <select className="custom-select d-block" onChange={(e) => setCobrador(e.target.value)} value={cobrador} id="estado" required>
-                                <option value="">Escolha</option>
-                                <option value="Isabela Eugenio">Isabela Eugenio</option>
-                                <option value="Edson Miguel">Edson Miguel</option>
-                                <option value="Giovana Blandino">Giovana Blandino</option>
-                                <option value="Andressa Oliveira">Andressa Oliveira</option>
-                                <option value="Andrieli Marques">Andrieli Marques</option>
-                                <option value="Yasmin Gomes">Yasmin Gomes</option>
+                            <select className="custom-select d-block"  onChange={(e) => setCliente({ ...cliente, cobrador: e.target.value})}  value={cliente.cobrador} id="estado" required>
+                            <option value="">Escolha</option>
+                            <option value="talita">talita</option>
+                                <option value="bruno">bruno</option>
+                                <option value="allan">allan</option>
+                                <option value="jhow">jhow</option>
+                                <option value="ana">ana</option>
+                                <option value="karol">karol</option>
+                                <option value="bruno pg">bruno pg</option>
+                                <option value="allan pg">allan pg</option>
+                                <option value="jhow pg">jhow pg</option>
+                                <option value="ana pg">ana pg</option>
+                                <option value="karol pg">karol pg</option>
                             </select>
                         </div>
                         <div className="caixa-cobrador">
                             <div className="input-group-prendend">
                                 <span className="input-group-text">Data da cobrança:</span>
                             </div>
-                            <input onChange={(e) => setDataCobranca(e.target.value)} value={dataCobranca} id="date" type="date" className="form-control" />
+
+                            <input  onChange={(e) => setCliente({ ...cliente, dataCobranca: e.target.value})} value={cliente.dataCobranca} id="date" type="date" className="form-control" />
                         </div>
                         <div className="caixa-cobrador">
                             <div className="input-group-prendend">
                                 <span className="input-group-text">Data de Vencimento:</span>
                             </div>
-                            <input onChange={(e) => setVencimentoCobranca(e.target.value)} value={vencimentoCobranca} id="date" type="date" className="form-control" />
+                            <input onChange={(e) => setCliente({ ...cliente, vencimentoCobranca: e.target.value})} value={cliente.vencimentoCobranca} id="date" type="date" className="form-control" />
                         </div>
                     </div>
                     {mensagem.length > 0 ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null}
@@ -102,7 +112,7 @@ function FichaCobranca() {
                 </form>
 
             </div>
-
+)}
             <div className="voltar row">
                 <Link to="/app/cobrancamapsempresas" className="btn btn-warning btn-acao">Voltar</Link>
                 <button onClick={AlterarCliente} type="button" className="btn btn-primary btn-acao">Salvar</button>

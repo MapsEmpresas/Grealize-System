@@ -9,10 +9,10 @@ function Site(){
     return <div>
        <Menu />
        <Banner />
-       <Features />
-       <Testemunho />
-       <Precos />
-       <Footer />
+       {/* <Features /> */}
+       {/* <Testemunho /> */}
+       {/* <Precos /> */}
+       {/* <Footer /> */}
     </div>
 }
 export default Site;
