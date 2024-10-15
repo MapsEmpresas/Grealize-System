@@ -1,70 +1,61 @@
 .banner {
-    background: linear-gradient(to right, #095d80, #b70a3c); /* Gradiente de azul para azul claro */
-    height: 500px; /* Ajuste conforme necessário */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
-  }
-  
-  .banner-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .image-container {
-    flex: 1;
-    padding-right: 20px; /* Espaçamento entre a imagem e o texto */
-  }
-  
-  .banner-image {
-    margin-top: 50px;
-    width: 104%; /* Ajusta o tamanho da imagem para ocupar 100% da largura do contêiner */
-    height: auto;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave para a transformação */
-  }
-  
-  .text-container {
-    flex: 1;
-    margin-top: 200px;
-    text-align: end;
-  }
-  
-  .first-text {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.4); /* Aplica um text shadow */
-    color: #eef6ff; /* Define a cor do primeiro texto */
-    font-size: 1.7rem;
-    margin-bottom: 20px;
-  }
-  
-  .second-text {
-    color: #c6d9ff; /* Define a cor do segundo texto */
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-  }
-  
-
-
-
-  .goo{
-    align-items: center;
-    justify-content: center;
+	height: 87vh;
+	background: linear-gradient(180deg, #374DDC, #374DDC, #A240B6);
+	position: relative;
+	overflow: hidden;
 }
 
-.goo h1{
-    text-align: center;
+.onda-svg {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: auto;
+	border: none;
 }
 
-.goo a{
-    margin-left: 35px;
-    justify-content: center;
-    align-items: center;
+
+.text-banner {
+	color: #F0F0F2;
 }
 
-.btn{
-    border-radius: 50px;
+.text-banner h1 {
+	font-size: 55px;
+	margin-bottom: 15px;
+}
+
+.btn-banner {
+	margin-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-banner1 {
+	background-color: #F0F0F2 !important;
+	margin-right: 50px !important;
+	padding: 15px 0 !important;
+	width: 150px;
+	transition: all .3s ease-in-out !important;
+}
+
+.btn-banner1:hover {
+	margin-top: -15px;
+	margin-left: -10px;
+	scale: 1.1;
+	color: #0D0C0B !important;
+}
+
+.btn-banner2 {
+	background-color: #2939A2 !important;
+	color: #fff !important;
+	padding: 15px 0 !important;
+	transition: all .3s ease-in-out !important;
+	width: 150px;
+}
+
+.btn-banner2:hover {
+	margin-left: -10px;
+	margin-top: -15px;
+	scale: 1.1;
+	background-color: #acaccb;
 }

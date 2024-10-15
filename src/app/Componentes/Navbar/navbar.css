@@ -29,6 +29,8 @@
 }
 .navbar-nav {
   align-items: center; 
+  display: flex;
+  gap: 5px;
 }
 .nav-link {
   color: #333; 

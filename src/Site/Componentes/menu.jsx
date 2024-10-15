@@ -2,29 +2,34 @@ import React from "react";
 import './menu.css'
 function Menu() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light custom-navbar">
-      <div className="container cont-img">
-        <a className="navbar-brand " href="/#">
-          <img src="../../../img/LOGO-REALIZE-removebg-preview.png" width="85" height="120" alt="" />
-        </a>
-        {/* <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Alterna navegação"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNavDropdown">
-          <ul className="navbar-nav ms-auto">
+    <div class="container">
+        <nav class=" nav navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img src="img/logo.png" alt="logo"/>
+                </a>
 
-          </ul>
-        </div> */}
-      </div>
-    </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                        <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                    <div class="d-flex btn-nav">
+                        <a href="https://wa.link/cibopv" class="btn btn-success me-2 px-3 text-white"><i
+                            class="fa-brands fa-whatsapp text-white px-2"></i></a>
+                            <a href="/app" class="btn btn-primary me-2 px-3 text-white">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
   );
 }
 

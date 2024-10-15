@@ -4,49 +4,19 @@ import "./footer.css";
 
 function Footer() {
     return (
-        <footer id="contatos" className="footer">
-            <div className="container">
-                <div className="row">
-                    <div className="footer-logo-container">
-                        <img
-                            src="../../../img/LOGO-REALIZE-removebg-preview.png"
-                            alt="Logo"
-                            className="footer-logo"
-                        />
-                    </div>
-                    <div className="footer-info">
-                        <div className="footer-contact text-light">
-                            <h5>Contato</h5>
-                            <p className="text-light"><b>Email</b></p>
-                            <p className="text-light">contato@grupomapsempresas.com.br</p>
-                            <p className="text-light">marketing@grupomapsempresas.com.br</p>
-                            <p className="text-light"><b>Telefone</b> </p>
-                            <p className="text-light">(11) 3939-2301</p>
-                        </div>
-                        <div className="footer-social">
-                            <h5 className="text-light" >Redes Sociais</h5>
-                            <ul className="social-icons">
-                                <li>
-                                    <a href="https://www.facebook.com/grupomapsempresas">
-                                        <FaFacebook />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com">
-                                        <FaTwitter />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com">
-                                        <FaInstagram />
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class=" footer" id="contato">
+        <footer class="py-3 mt-5">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#inicio" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link px-2 text-body-secondary">Sobre</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link px-2 text-body-secondary">Serviços</a>
+                </li>
+                <li class="nav-item"><a href="#contato" class="nav-link px-2 text-body-secondary">Contato</a>
+                </li>
+            </ul>
+            <p class="text-center">&copy; 2021 G Realize</p>
         </footer>
+    </div>
     );
 }
 

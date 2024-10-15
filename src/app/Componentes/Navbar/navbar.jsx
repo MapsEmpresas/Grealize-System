@@ -104,7 +104,7 @@ function Navbar() {
           className="collapse navbar-collapse  d-lg-flex justify-content-end"
           id="navbarNavDropdown"
         >
-          <ul className="navbar-nav active ">
+          <ul className="navbar-nav active  ">
             <li className="nav-item ">
               <Link to={'https://app2.pontomais.com.br/login'} aria-current="page" className="btn  btn-nav btn-nav-ct0 btn-success" type="button" id="button-addon2">
                 <i className="fa-solid fa-check"></i><b> PONTO MAIS</b>
@@ -113,32 +113,32 @@ function Navbar() {
             {isAdmUser && (
               <>
                 <li className="nav-item ">
-                  <Link to={'/app/home/relatoriototal'} aria-current="page" className=" btn   btn-nav btn-nav-ct" type="button" id="button-addon2">
+                  <Link to={'/app/home/relatoriototal'} aria-current="page" className="text-dark btn btn-nav btn-nav-ct" type="button" id="button-addon2">
                   <i className="fa-solid fa-table"></i> <b> RELATÓRIO</b>
                   </Link>
                 </li>
                 <li className="nav-item ">
-                  <Link to={'/app/monitoriamapsempresas'} aria-current="page" className=" btn   btn-nav btn-nav-ct" type="button" id="button-addon2">
+                  <Link to={'/app/monitoriamapsempresas'} aria-current="page" className=" btn text-dark  btn-nav btn-nav-ct" type="button" id="button-addon2">
                     <i className="fa-regular fa-clipboard"></i><b> DESENVOLVIMENTO</b>
                   </Link>
                 </li>
                 <li className="nav-item ">
-                  <Link to={'/app/marketingmapsempresas'} aria-current="page" className=" btn   btn-nav btn-nav-ct" type="button" id="button-addon2">
+                  <Link to={'/app/marketingmapsempresas'} aria-current="page" className=" btn text-dark  btn-nav btn-nav-ct" type="button" id="button-addon2">
                     <i className="fa-regular fa-folder"></i><b> BACK</b>
                   </Link>
                 </li>
                 <li className="nav-item ">
-                  <Link to={'/app/financeiromapsempresas'} aria-current="page" className="btn  btn-nav btn-nav-ct" type="button" id="button-addon2">
+                  <Link to={'/app/financeiromapsempresas'} aria-current="page" className="btn text-dark btn-nav btn-nav-ct" type="button" id="button-addon2">
                     <i className="fa-solid fa-dollar-sign"></i><b> FINANCEIRO</b>
                   </Link>
                 </li>
                 <li className="nav-item ">
-                  <Link to={'/app/gestaomapsempresas'} aria-current="page" className=" btn   btn-nav btn-nav-ct" type="button" id="button-addon2">
+                  <Link to={'/app/gestaomapsempresas'} aria-current="page" className=" btn text-dark  btn-nav btn-nav-ct" type="button" id="button-addon2">
                     <i className="fa-solid fa-lock"></i><b> GESTÃO</b>
                   </Link>
                 </li>
                 <li className="nav-item ">
-                  <Link to={'/app/cobrancamapsempresas'} aria-current="page" className="btn  btn-nav btn-nav-ct" type="button" id="button-addon2">
+                  <Link to={'/app/cobrancamapsempresas'} aria-current="page" className="btn text-dark btn-nav btn-nav-ct" type="button" id="button-addon2">
                     <i className="fa-solid fa-comments-dollar"></i><b> COBRANÇA </b>
                   </Link>
                 </li>

@@ -53,14 +53,14 @@ function Navbar2() {
             {isAdmUser && (
               <>
                 <li className="nav-item ">
-                  <Link to="/app/home" aria-current="page" className="btn  btn-nav btn-nav-ct" type="button" id="button-addon2">
+                  <Link to="/app/home" aria-current="page" className="btn text-dark btn-nav btn-nav-ct" type="button" id="button-addon2">
                   <i className="fa-solid fa-arrow-rotate-left"></i><b> VOLTAR</b>
                   </Link>
                 </li>
               </>
             )}
             <li className="nav-item">
-              <Link to="/app" onClick={Logout} className="btn btn-danger btn-nav" aria-current="page"><b><i className="fa-solid fa-right-from-bracket"></i> SAIR </b></Link>
+              <Link to="/app" onClick={Logout} className="btn text-dark btn-danger btn-nav" aria-current="page"><b><i className="fa-solid fa-right-from-bracket"></i> SAIR </b></Link>
             </li>
           </ul>
         </div>

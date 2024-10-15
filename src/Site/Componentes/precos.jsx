@@ -1,49 +1,71 @@
 import React from "react";
+import './precos.css'
 function Precos() {
-    return <section id="precos">
-        <div className="container">
-            <div className="row test-center center ">
-                <div className="titulo">
-                    <h1>Planos e Preços</h1>
-                    <p>Comece sua avaliação.</p>
+    return <section class="">
+    <div class="container galeria">
+        <div class="text-center">
+            <small>Serviços recentes</small>
+            <h1>Nosso Portifólio</h1>
+        </div>
+        <div class="row text-center gale col-md-12">
+            <div class="col-md-4 box-galeria col-6">
+                <div class="info-galeria">
+                    <a href="https://calcadosverana.shop/">
+                        <div class="galeria-img01"> 
+                            <img src="img/img-galeria01.png" alt="" class="img-fluid"/>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div className="row test-center">
-                <div className="col-lg-4">
-                    <div className="card">
-                        <div className="card-header bg-danger"><h1>Bronze</h1></div>
-                        <div className="card-body">
-                            <h2>R$ 249,90</h2>
-                            <p>Plano Trimestral</p>
-                            <p>Suporte valido por 3 meses.</p>
-                            <a href="https://grupomapsempresas.com.br/" className="btn btn-lg btn-outline-primary">Saiba mais <i className="fa-solid fa-plus"></i></a>
+            <div class="col-md-4 box-galeria col-6">
+                <div class="info-galeria">
+                    <a href="https://adegamineiracomercio.shop/">
+                        <div class="galeria-img02">
+                            <img src="img/img-galeria02.png" alt="" class="img-fluid"/>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div className="col-lg-4">
-                    <div className="card">
-                        <div className="card-header bg-secondary"><h1>Prata</h1></div>
-                        <div className="card-body">
-                            <h2>R$ 349,90</h2>
-                            <p>Plano Semestral</p>
-                            <p>Suporte valido por 6 meses.</p>
-                            <a href="https://grupomapsempresas.com.br/" className="btn btn-lg btn-outline-primary">Saiba mais <i className="fa-solid fa-plus"></i></a>
+            </div>
+            <div class="col-md-4 box-galeria col-6">
+                <div class="info-galeria">
+                    <a href="https://panificadoraconexaopiumhi.shop/">
+                        <div class="galeria-img03">
+                            <img src="img/img-galeria03.png" alt="" class="img-fluid"/>
                         </div>
-                    </div>
-                </div>
-                <div className="col lg-4">
-                    <div className="card">
-                        <div className="card-header bg-warning"><h1>Ouro</h1></div>
-                        <div className="card-body">
-                            <h2>R$ 549,90</h2>
-                            <p>Plano Anual</p>
-                            <p>Suporte valido por 1 ano.</p>
-                            <a href="https://grupomapsempresas.com.br/" className="btn btn-lg btn-outline-primary">Saiba mais <i className="fa-solid fa-plus"></i></a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="row text-center gale col-md-12">
+            <div class="col-md-4 box-galeria col-6">
+                <div class="info-galeria">
+                    <a href="https://scuderiablcar.com.br">
+                        <div class="galeria-img01">
+                            <img src="img/img-galeria04.png" alt="" class="img-fluid"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 box-galeria col-6">
+                <div class="info-galeria">
+                    <a href="https://padariafornogrande.shop">
+                        <div class="galeria-img02">
+                            <img src="img/img-galeria05.png" alt="" class="img-fluid"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 box-galeria col-6">
+                <div class="info-galeria">
+                    <a href="https://acessosaude.shop">
+                        <div class="galeria-img03">
+                            <img src="img/img-galeria06.png" alt="" class="img-fluid"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 }
 export default Precos;

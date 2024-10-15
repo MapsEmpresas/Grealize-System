@@ -1,32 +1,56 @@
-.custom-navbar {
-    background-color: #ffffff;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    padding-block: 30px;
-  }
-  
-  .custom-navbar a {
-    color: black; 
-    transition: color 0.3s ease; 
+nav .navbar-toggler {
+	background-color: #374DDC;
 }
-  
-  .navbar-brand img {
-    border-radius: 8px; 
-    
-  }
-  
-  .navbar-toggler {
-    border: none;
-  }
-  
-  .navbar-nav .nav-item {
-    margin-right: 15px;
-  }
-  
-  .navbar-nav .nav-link {
-    font-weight: 500;
-    transition: color 0.3s ease; 
-  }
-  .cont-img {
-    justify-content: center!important;
-    display: flex;
-  }
+
+.nav .nav-link {
+	color: #fff;
+}
+
+.nav.ativo {
+	background-color: #fff;
+	opacity: 0.95;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+	transition: background-color 0.3s linear;
+	color: #000;
+}
+
+.navbar-brand img {
+	margin-top: 10px;
+	width: 100px;
+	height: 80px;
+}
+
+.btn-nav{
+	display: flex;
+	gap: 10px;
+}
+
+@media screen and (max-width: 992px) {
+
+	nav {
+		background-color: #fff;
+	}
+
+	nav .nav-link {
+		color: #000 !important;
+	}
+
+	nav .btn {
+		color: #000!important;
+	}
+
+	.banner {
+		margin-top: 100px;
+		height: auto;
+	}
+
+	.box-serv p {
+		margin-bottom: 30px !important;
+	}
+}
+
+
+
+nav .btn{
+	color: #fff;
+}

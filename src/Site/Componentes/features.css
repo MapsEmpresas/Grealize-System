@@ -1,45 +1,78 @@
-.sobre-nos {
-  padding: 50px 0;
-  text-align: center; /* Centraliza o texto dentro do elemento */
-  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.3);
 
+.linha-branca {
+	height: 150px;
+	width: 100%;
+	margin-top: 100px;
+	background-color: #fff;
+	position: absolute;
+	z-index: -1;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.container {
-  display: flex;
-  justify-content: space-around; /* Alterado para distribuir o espaço entre os elementos */
-  max-width: 1200px;
-  margin: 0 auto;
+.sobre {
+	position: relative;
+	border: 5px double #6F7BBF;
+	margin-top: -30px;
+	border-radius: 25px;
+	height: auto;
+	background: linear-gradient(120deg, #374DDC, #374DDC, #A240B6);
+	transition: all .5s ease-in-out;
 }
 
-.section {
-  width: 30%; /* Define a largura de cada seção */
+.sobre::before,
+.sobre::after,
+.sobre::before,
+.sobre::after {
+	content: '';
+	position: absolute;
+	width: 70px;
+	/* Adjust as needed */
+	height: 70px;
+	/* Adjust as needed */
+	background: #fff;
+	/* Match the gradient */
 }
 
-.text-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.sobre::before {
+	top: -25px;
+	/* Adjust to match the border-radius */
+	left: -25px;
+	/* Adjust to match the border-radius */
+	border-bottom-right-radius: 50%;
+	rotate: 25deg;
 }
 
-.image {
-  width: 170px; /* Define a largura das imagens */
-  height: 170px; /* Define a altura das imagens */
-  border-radius: 50%; /* Torna as imagens arredondadas */
-  object-fit: cover; /* Garante que a imagem cubra todo o contêiner, mesmo que haja distorção */
-  margin-bottom: 10px; /* Reduz o espaçamento abaixo da imagem */
+.sobre::after {
+	bottom: -25px;
+	/* Adjust to match the border-radius */
+	right: -25px;
+	/* Adjust to match the border-radius */
+	rotate: 25deg;
+	border-top-left-radius: 50%;
 }
 
-.titulo-sobre {
-  text-align: center; /* Centraliza o texto */
-  margin-top: 30px; /* Espaçamento superior */
-  margin-bottom: 40px; /* Espaçamento inferior */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Aplica um text shadow */
+.sobre:hover {
+	scale: 1.01;
 }
 
-.section {
-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para cima */
-padding-top: 20px; /* Ajusta o espaçamento superior para acomodar a sombra */
-margin-bottom: 50px; /* Adiciona espaçamento entre as seções */
+.titulo-caixa {
+	margin-top: 50px;
+}
+
+.dados-sobre {
+	display: flex;
+	align-items: center;
+}
+
+.img-sobre {
+	position: relative;
+}
+
+.img-sobre1 {
+	margin-top: 50px;
+	border-radius: 25px;
+}
+
+.text-sobre {
+	flex: 1;
 }
